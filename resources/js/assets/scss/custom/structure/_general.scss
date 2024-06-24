@@ -1,0 +1,228 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.popover-body {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.popover-body .btn.btn-default {
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+.popover-body .confirm_msg { font-size: 16px;}
+
+table tbody tr { background-color: #ffffff }
+.dark-layout table tbody tr { background-color: #252b3b }
+
+.table-list-move { transition: transform 0.6s }
+
+.table-list-enter-active,
+.table-list-leave-active { transition: opacity 0.6s, transform 0.6s; }
+
+@for $i from 1 through 23 {
+    .table-list-enter-active:nth-child(n+#{$i+1}) {
+        transition: opacity 0.6s unquote('0.') + $i+1 + unquote('s'),
+                    transform 0.6s unquote('0.') + $i+1 + unquote('s')
+    }
+}
+
+.table-list-enter {
+    opacity: 0;
+    transform: translateX(-160px);
+}
+
+.table-list-enter-to,
+.table-list-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.table-list-leave-to {
+    opacity: 0;
+    transform: translateX(260px);
+}
+
+.dark-layout .empty_filtered p,
+.dark-layout .empty_records p {
+    color: #ffffff;
+}
+
+@keyframes showFilterMSG {to { opacity: 1 }}
+
+.empty_filtered {
+    opacity: 0;
+    animation: showFilterMSG 0.5s 0.51s forwards;
+}
+
+.notification-item .media {
+    cursor: pointer;
+  }
+  
+  .notification-item .not_readed {
+    background-color: #ffeaea;
+  }
+  
+  .dark-layout .notification-item .not_readed {
+    background-color: #620206;
+  }
+  
+
+.apexcharts-toolbar {
+    z-index: 1 !important;
+}
+
+
+.dynamic_table_card_body {
+    padding-bottom: 30px;
+}
+
+.dynamic_table .table_feedback .loading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 110px;
+    padding-top: 45px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+// add - edit - view admin
+
+.admin_permissions { height: 135px; }
+.admin_permissions .custom-control-label {text-transform: capitalize}
+.admin_permissions .custom-checkbox {display: inline-block;}
+
+.admin_permissions ul.nav-tabs li.nav-item a.nav-link {
+    padding: 0.5rem 0.5rem !important;
+}
+
+// add - edit - view landlord vouchers
+
+.form-group .pagination {
+    display: flex;
+    margin: 0.25rem 0.25rem 0;
+  }
+
+  .form-group .pagination button {
+    flex-grow: 1;
+  }
+
+  .form-group .pagination button:hover {
+    cursor: pointer;
+  }
+  
+  .card.landlord_v {
+      transition: 0.5s ease-out;
+  }
+  
+  .payment_shadow {
+      -webkit-box-shadow:0px 0px 15px 0px rgba(235,60,54,0.50);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(235,60,54,0.50);
+      box-shadow: 0px 0px 15px 0px rgba(235,60,54,0.50);
+  }
+  
+  .receipt_shadow {
+      -webkit-box-shadow:0px 0px 15px 0px rgba(35,125,98,0.5);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(35,125,98,0.5);
+      box-shadow: 0px 0px 15px 0px rgba(35,125,98,0.5);
+  }
+  
+  .form-group label.text_animate.red_text {
+      color: #ff3d60;
+  }
+  
+  .form-group label.text_animate.green_text {
+      color: #1cbb8c;
+  }
+  
+
+//  rent_payment
+
+  table.rent_payment_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table.rent_payment_table ,
+.rent_payment_table th, 
+.rent_payment_table td {
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 0;
+}
+
+.rent_payment_table tbody tr:hover {background-color: #ddd;}
+.rent_payment_table tbody tr.selected {background-color: #ffffbf;}
+.rent_payment_table tbody tr.p_done {background-color: #5cdd79;}
+.rent_payment_table tbody tr.p_banned {background-color: #ffb4bb;}
+
+.rent_payment_table .excel_btn {
+    width: 100%; 
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgb(239 239 239);
+    cursor: pointer;
+}
+
+// tenant 
+
+.mb4 {margin-bottom: 25px; margin-top: 9px }
+
+table.fast_info td {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.fast_info p {
+    font-weight: 600;
+}
+
+// report
+
+#vs1__combobox {
+    padding: 4px 4px !important;
+}
+
+.report_card .action_btns button {
+    margin-top: 0;
+    padding: 6px 12px;
+}
+
+
+// print
+
+.tenant_contract .container {
+    background: #fff;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.tenant_contract p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.print-nav a {
+    font-size: 22px;
+    display: block;
+}
+.print-nav .right, .print-nav .left {
+    position:fixed;
+    width:50;
+    height:50;
+    top:20px;
+}
+
+.print-nav .left {
+    left:20px;   
+}
+.print-nav .right {
+    right:20px;
+}
+
+@media print {
+    .print-nav {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+
+// [@NAME_CAP_Plur]
+Route::prefix('[@NAME_SML_Plur]')->group(function () {
+    Route::get('/list',         [ [@NAME_CAP_Plur]Controller::class, 'list']);
+    Route::post('/add',         [ [@NAME_CAP_Plur]Controller::class, 'create']);
+    Route::get('/edit/{id}',    [ [@NAME_CAP_Plur]Controller::class, 'edit']);
+    Route::post('/update/{id}', [ [@NAME_CAP_Plur]Controller::class, 'update']);
+    Route::post('/delete/{id}', [ [@NAME_CAP_Plur]Controller::class, 'delete']);
+});

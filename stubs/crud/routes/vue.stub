@@ -1,0 +1,25 @@
+
+{
+    path: '/[@NAME_DASH_Plur]',
+    name: '[@NAME_CAP_SNK_Plur]',
+    meta: { middleware: "auth" },
+    component: () => import ('../views/pages/[@NAME_SML_Plur]/index.vue')
+},
+{
+    path: '/add-[@NAME_DASH]',
+    name: 'Add-[@NAME_CAP_SNK]',
+    meta: { middleware: "auth" },
+    component: () => import ('../views/pages/[@NAME_SML_Plur]/add.vue')
+},
+{
+    path: '/edit-[@NAME_DASH]/:id/',
+    name: 'Edit-[@NAME_CAP_SNK]',
+    meta: { middleware: "auth" },
+    component: () => import ('../views/pages/[@NAME_SML_Plur]/edit.vue')
+},
+{
+    path: '/view-[@NAME_DASH]/:id/',
+    name: 'View-[@NAME_CAP_SNK]',
+    meta: { middleware: "auth" },
+    component: () => import ('../views/pages/[@NAME_SML_Plur]/view.vue')
+},

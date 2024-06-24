@@ -1,0 +1,40 @@
+/*
+Template Name: Nazox - Responsive Bootstrap 4 Admin Dashboard
+Author: Themesdesign
+Contact: themesdesign.in@gmail.com
+File: Main Css File
+*/
+
+//Fonts
+@import "custom/fonts/fonts";
+//Core files
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "variables-dark";
+@import "~bootstrap/scss/mixins";
+@import '~bootstrap/scss/bootstrap';
+@import 'bootstrap-dark';
+@import '~bootstrap-vue/src/index.scss';
+// Structure
+@import "custom/structure/general";
+@import "custom/structure/topbar";
+@import "custom/structure/page-head";
+@import "custom/structure/footer";
+@import "custom/structure/right-sidebar";
+@import "custom/structure/vertical";
+@import "custom/structure/horizontal-nav";
+@import "custom/structure/layouts";
+// Components
+@import "custom/components/helper";
+@import "custom/components/preloader";
+@import "custom/components/forms";
+@import "custom/components/chat";
+// Pages
+@import "custom/pages/authentication";
+// Plugins
+@import "custom/plugins/custom-scrollbar";
+@import "custom/plugins/sweatalert2";
+// icons
+@import "icons";
+
+@import "custom-style-dark-layout";
